@@ -4,7 +4,7 @@ import Home from './views/Home.vue';
 import ListWithProps from './views/ListWithProps.vue';
 import ListWithoutProps from './views/ListWithoutProps.vue';
 
-export const routerHistory = createWebHistory();
+export const routerHistory = createWebHistory(import.meta.env.BASE_URL);
 export const router = createRouter({
     history: routerHistory,
     strict: true,
